@@ -24,7 +24,7 @@ Base.prepare(engine, reflect=True)
 # Save reference to the table
 # print(Base.classes)
 Happiness = Base.classes.happiness
-Happiness_Report = Base.classes.happiness_report
+Happiness_Report = Base.classes.happyness_report
 
 #################################################
 # Flask Setup
@@ -57,7 +57,7 @@ def happyness_index():
 # Render Happiness Report data to html template
 @app.route("/project3")
 def project3():
-    ML_data = engine.execute("SELECT * FROM happiness_report")
+    ML_data = engine.execute("SELECT * FROM happyness_report")
     return render_template("project3.html", ML_data=ML_data)
 
 
@@ -65,7 +65,7 @@ def project3():
 @app.route("/api/v1.0/happyness_report_data")
 def happyness_report_data():
     # Get all data from DB
-    ML_data = engine.execute("SELECT * FROM happiness_report")
+    ML_data = engine.execute("SELECT * FROM happyness_report")
 
     # jsonify data to render template
     return jsonify({'ML_data': [dict(row) for row in ML_data]})
