@@ -4,7 +4,7 @@ import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 import json
 
@@ -69,6 +69,11 @@ def happyness_report_data():
 
     # jsonify data to render template
     return jsonify({'ML_data': [dict(row) for row in ML_data]})
+
+# Route for team html template
+@app.route("/the_team")
+def about_us():
+    return render_template("about_us.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
