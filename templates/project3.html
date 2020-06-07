@@ -251,8 +251,9 @@
                     <div class="row-md-12 row_groups">
                         <h5>World Happiness Report</h5>
                         <p>This map displays the happiness ranks from the 2019 World Happiness Report categorized
-                            into 4 groups of roughly 40 countries each (Very Happy, Happy, Less Happy, and Least
-                            Happy). This is a baseline map to explore where the countries lie based on the report’s
+                            into 4 groups of roughly 40 countries each (Highest Ranks, Mid-Higher Ranks, Mid-Lower
+                            Ranks, and Lowest Ranks). This is a baseline map to explore where the countries lie based on
+                            the report’s
                             happiness score.</p>
                     </div>
                 </div>
@@ -288,6 +289,18 @@
                         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                         vizElement.parentNode.insertBefore(scriptElement, vizElement);
                     </script>
+                    <div class="row-md-12 row_groups">
+
+                        <p>The above scatter plot shows the clusters created through K-Means clustering with respect to
+                            GDP per Capita.
+                            This graph explores each country's happiness score to their respective GDP per Capita based
+                            on each cluster.
+                            It is evident that each cluster respresents high happiness score, moderate happiness score
+                            and least happiness score
+                            associated with high generally high GDP per Capita, a mixture of high and low GDP per Capita
+                            and generally low GDP per Capita, respectively.
+                        </p>
+                    </div>
                 </div>
             </section>
             <hr>
@@ -321,6 +334,21 @@
                         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                         vizElement.parentNode.insertBefore(scriptElement, vizElement);
                     </script>
+                    <div class="row-md-12 row_groups">
+
+                        <p>The above scatter plot shows the clusters created through K-Means clustering with respect to
+                            Generosity.
+                            This graph explores each country's happiness score to their respective generosity based
+                            on each cluster.
+                            It is evident that each of the clusters does not have a clear respresentation based on
+                            generosity.
+                            It shows that generosity is generally low across the three clusters of happiness score
+                            suggesting that
+                            the report's 156 countries represent less generosity. Ultimately, this shows that generosity
+                            does not
+                            impact the happiness score as much as the GDP per Capita.
+                        </p>
+                    </div>
                 </div>
             </section>
             <hr>
@@ -354,6 +382,22 @@
                         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                         vizElement.parentNode.insertBefore(scriptElement, vizElement);                
                     </script>
+                    <div class="row-md-12 row_groups">
+
+                        <p>The above scatter plot shows the clusters created through K-Means clustering with respect to
+                            perceptions of happiness.
+                            This graph explores each country's happiness score to their respective perceptions of
+                            happiness based
+                            on each cluster.
+                            It is evident that the high happiness scores are associated with mostly low perceptions of
+                            corruption with a few high representations,
+                            whereas the moderate and least happiness scores are associated with generally lower
+                            perceptions of corruption. This graph concludes
+                            that happiness score is not as impacted by perceptions of corruption as GDP per capita.
+                            Additionally, most of the report's 156 countries
+                            tend to have lower perceptions of corruption.
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>
