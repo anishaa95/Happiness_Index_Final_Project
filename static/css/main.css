@@ -40,11 +40,12 @@
 
 .row_groups {
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 .map {
   padding-top: 20px;
+  padding-bottom: 70px;
 }
 
 .row_odd {

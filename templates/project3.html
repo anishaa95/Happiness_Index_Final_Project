@@ -38,18 +38,18 @@
                         <nav class="navbar navbar-expand navbar-light bg-light">
                             <div class="collapse navbar-collapse" id="navbarResponsive">
                                 <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="/">The Project
-                                            <span class="sr-only">(current)</span>
-                                        </a>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="/">The Project</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/project3">Project 3</a>
+                                      <a class="nav-link active" href="/project3">Project 3
+                                        <span class="sr-only">(current)</span>
+                                      </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/the_team">The Team</a>
+                                      <a class="nav-link" href="/the_team">The Team</a>
                                     </li>
-                                </ul>
+                                  </ul>
                             </div>
                         </nav>
                     </div>
@@ -71,50 +71,138 @@
         <main>
             <!-- The Project section -->
             <section>
-                <div id="the_project" class="row align-items-center row_groups">
-                    <div class="col-md-8 text_groups">
+                <div id="the_project" class="row align-items-center">
+                    <div class="col-md-7 text_groups">
                         <h1 class="sub">The Project</h1>
-                        <h5>TBD</h5>
-                        <p>TBD</p>
-                        <p>TBD</p>
-                        </p>
+                        <h5>Happiness Report Maps</h5>
+                        <p>After listening to you we want to explore what other people have to say about happiness. 
+                            We want to understand to what degree happiness can be categorized.  If you are able to 
+                            break down elements of happiness, will all of them be created equal? We found the most 
+                            widely used and reputable measure of happiness by country; we then used k-means clustering 
+                            to try and see if any of the factors that were measured had an outsized effect on a country's 
+                            overall happiness score. </p>
+
+                        <p>We used the <a href="https://en.wikipedia.org/wiki/World_Happiness_Report" 
+                            class="text-reset" target="_blank"><strong>World Happiness Report</strong></a>. It is an annual 
+                            publication of the <a href="https://www.unsdsn.org" class="text-reset" 
+                            target="_blank"><strong>United Nations Sustainable Development Solutions Network</strong></a>. 
+                            It contains articles, and rankings of national happiness based on 
+                            respondent ratings of their own lives, which the report also correlates with various life factors. 
+                            As of March 2020, Finland was ranked the happiest country in the world three times in a row. The World 
+                            Happiness Report contained a listing of 156 countries with an overall score ranking and a happiness 
+                            rating by countries.</p>
+                            
+                        <p>Of all the factors within the dataset in the <a href="https://worldhappiness.report/ed/2019/" 
+                            class="text-reset" target="_blank"><strong>2019 World Happiness report</strong></a> used to calculate the 
+                            overall happiness score, we believe one or more factors has a larger impact on the overall 
+                            happiness than the other factors.</p>
                     </div>
-                    <div class="col-md-4">
-                        <img src="" class="img-fluid image_box" alt="Image TBD">
+                    <div class="col-md-5">
+                        <img src="static/Images/Happiness.png" class="img-fluid image_box" alt="Image TBD">
                     </div>
                 </div>
 
             </section>
             <!-- The end of The Project section -->
-            <hr>
             <section>
-                <!-- Elements of Happiness section -->
-                <div id="Hap_anchor" class="row align-items-center row_groups">
-                    <div class="col-md-8">
-                        <h1>TBD</h1>
-                        <p>TBD</p>
+                <!-- Index section -->
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h1>The Index</h1>
+                        <h5>Factors</h5>
+                        <p>The 6 variables provided in the data set are:</p>
                         <div class="list">
                             <ol>
-                                <li>TBD</li>
-                                <li>TBD</li>
-                                <li>TBD</li>
-                                <li>TBD</li>
-                                <li>TBD</li>
+                                <li><strong>GDP per capita:</strong> Purchasing Power Parity (PPP)</li>
+                                <li><strong>Healthy Life Expectancy:</strong> Time series of healthy life expectancy</li>
+                                <li><strong>Support:</strong> National average of the binary responses to the Gallup World Poll (GWP) question</li>
+                                <li><strong>Freedom:</strong> Freedom to make life choices</li>
+                                <li><strong>Generosity:</strong> Money donated to a charity in the past month</li>
+                                <li><strong>Corruption:</strong> Perceptions of corruption</li>
                             </ol>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="" class="img-fluid rounded-circle image_box" alt="Image TBD">
+                </div>
+            </section>
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <img src="static/Images/Bar_index.png" class="img-fluid image_box" alt="Image TBD">
+                </div>
+            </div>
+            <section>
+                <!-- End of Index section -->
+                <!-- Why is Importat section -->
+                <div class="row-md-12 row_groups">
+                    <h1>Why This is Important</h1>
+                    <h5>Manifesto</h5>
+                    <p>If you talk to someone long enough you know that happiness is subjective, at least after a point, 
+                        if you talk further this can lead to arguments. If you continue to argue you will either leave 
+                        heated and angry or you will reconcile with the other person and look to what you both see as 
+                        equally important to each of your feelings of happiness.</p>
+
+                    <p>In that agreement you might find the ideas expressed in the data gathered. This will not cover 
+                        what makes everyone happy in a specific place but it is a good source on what people around the 
+                        world can agree on makes them happy when they’re ready to stop yelling.</p>
+                        
+                    <p>Commonalities are important for the present but further analysis can help us take what it gathered 
+                        and look towards the future. If there’s a factor that has a greater effect on a country’s happiness 
+                        then it stands to reason that’s a good area to focus for others.</p>
+                </div>
+            </section>
+            <section>
+                <div class="row-md-12 row_groups">
+                    <h1>The Data</h1>
+                    <h5>How did we find the data?</h5>
+                    <p>We didn't find it on our own. A little bird told us about it. Seriously though, in our initial 
+                        project where we created our own happiness index we looked for other attempts and measured happiness 
+                        by country. This dataset came up frequently.</p>
+                    <h5>The data set analysis</h5>
+                    <p>We reviewed the data set 6 variables and determined that there were no obvious ways that we can 
+                        distinguish groups through manual inspection and there were no explicit labels within the data 
+                        that provide logical groupings. We then utilized Tableau K-means clustering to discover patterns 
+                        in our data set and chose groupings based on 4 clusters. Tableau clustering then divided the population 
+                        into subgroups based on shared characteristics (see images below).</p>
+                    <p>We further grouped the happiness ranking of the data set into 4 distinct quadrants. The table below 
+                        shows the grouping labels and ranking. We added the label of the grouped happy rank on top of the 
+                        cluster to determine if there is a logical grouping of the variable around the ranking.</p>
+                </div>
+                <div class="row justify-content-md-center"> 
+                    <div class="col-md-10 pb-5">
+                        <table class="table table-striped table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Overall Country Happy Rank</th>
+                                    <th scope="col">Percent</th>
+                                    <th scope="col">Label</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1-39</th>
+                                    <td>25%</td>
+                                    <td>Very Happy</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">40-78</th>
+                                    <td>25%</td>
+                                    <td>Happy</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">79-117</th>
+                                    <td>25%</td>
+                                    <td>Less Happy</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">118-156</th>
+                                    <td>25%</td>
+                                    <td>Least Happy</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <hr>
-                <div class="row row_groups">
-                    <h1>TBD</h1>
-                    <p>TBD</p>
-                </div>
-                <!-- End of Elements of Happiness section -->
             </section>
-            <hr>
+                    <hr>
             <!-- Insert here Tableau  -->
             <section>
                 <div class="row-md-12">
@@ -134,7 +222,8 @@
                             <param name='display_static_image' value='yes' />
                             <param name='display_spinner' value='yes' />
                             <param name='display_overlay' value='yes' />
-                            <param name='display_count' value='yes' /></object></div>
+                            <param name='display_count' value='yes' /></object>
+                    </div>
                     <script type='text/javascript'>
                         var divElement = document.getElementById('viz1591233881228');
                         var vizElement = divElement.getElementsByTagName('object')[0];
@@ -144,6 +233,13 @@
                         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                         vizElement.parentNode.insertBefore(scriptElement, vizElement);
                     </script>
+                    <div class="row-md-12 row_groups">
+                        <h5>World Happiness Report</h5>
+                        <p>This map displays the happiness ranks from the 2019 World Happiness Report categorized 
+                            into 4 groups of roughly 40 countries each (Very Happy, Happy, Less Happy, and Least 
+                            Happy). This is a baseline map to explore where the countries lie based on the report’s 
+                            happiness score.</p>
+                    </div>
                 </div>
             </section>
             <hr>
@@ -166,9 +262,25 @@
                             <param name='display_static_image' value='yes' />
                             <param name='display_spinner' value='yes' />
                             <param name='display_overlay' value='yes' />
-                            <param name='display_count' value='yes' /></object></div>
-                    <script
-                        type='text/javascript'>                    var divElement = document.getElementById('viz1591233686173'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                            <param name='display_count' value='yes' /></object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1591233686173');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                    <div class="row-md-12 row_groups">
+                        <h5>Clusters by Country Using 6 Variables</h5>
+                        <p>This map displays 4 clusters based on the six variables of the  2019 World Happiness 
+                            Report (GDP/Capita, Social support, Healthy Life Expectancy, Freedom to make life choices, 
+                            Generosity, Perceptions of corruption). This map helps us determine if there are any common 
+                            characteristics between any of the countries in the report based on all of the variables used 
+                            to determine the happiness score.</p>
+                    </div>
                 </div>
             </section>
             <hr>
@@ -191,13 +303,41 @@
                             <param name='display_static_image' value='yes' />
                             <param name='display_spinner' value='yes' />
                             <param name='display_overlay' value='yes' />
-                            <param name='display_count' value='yes' /></object></div>
-                    <script
-                        type='text/javascript'>                    var divElement = document.getElementById('viz1591233752740'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                            <param name='display_count' value='yes' /></object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1591233752740');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                        var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                     <div class="row-md-12 row_groups">
+                         <h5>Average Overall Happiness Score by Cluster</h5>
+                         <p>This map displays the average happiness score for each of the 4 clusters determined in Map 2 
+                             based on the six variables of the  2019 World Happiness Report (GDP/Capita, Social support, 
+                             Healthy Life Expectancy, Freedom to make life choices, Generosity, Perceptions of corruption). 
+                             This map helps predict the average happiness score of a country based on specific 
+                             characteristics of the country.</p>
+                    </div>
                 </div>
             </section>
         </main>
     </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small unique-color-dark">
+            
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+                <hr>
+                <a href="https://bit.ly/378uWWT" class="text-reset" target="_blank" >
+                    <strong>George Washington University Data Analytics Boot Camp</strong></a>  - Class 2020
+            </div>
+            <!-- Copyright -->
+            
+        </footer>
+        <!-- Footer -->
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
