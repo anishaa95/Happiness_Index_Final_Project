@@ -19,3 +19,12 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .masthead2 {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../Images/Team\ Background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
